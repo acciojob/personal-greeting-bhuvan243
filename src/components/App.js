@@ -8,11 +8,11 @@ const App = () => {
     <div>
         {/* Do not remove the main div */}
         <form>
-          <label>Enter your name:</label>
+          <p>Enter your name:</p>
           <input type="text" onChange={(e) => setName(e.target.value)}/>
         </form>
         
-        { name && <p>Hello {name}!</p> }
+        { name && "Hello "+{name}+"!" }
     </div>
   )
 }
